@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <b id="logo">Unit Converter</b>
+    </div>
+    <div id="types_box">
+        <b id="types_txt">Types</b>
+        <select id="unit_types">
+          <option value="area">Area</option>
+          <option value="length">Length</option>
+          <option value="volume">Volume</option>
+          <option value="weight">Weight</option>
+          <option value="temperature">Temperature</option>
+      </select>
+    </div>
+    <div id="from_box">
+        <b id="from_txt">From</b>
+        <div class="input_group">
+            <input id="from_in" type="number" placeholder="Enter value">
+            <select id="from_types"></select>
+        </div>
+    </div>
+    <div id="to_box">
+        <b id="to_txt">To</b>
+        <div class="input_group">
+            <input id="to_in" type="number" readonly placeholder="Result">
+            <select id="to_types"></select>
+        </div>
+    </div>
+    <!--<div id="footer">
+        <p>Developed by Vince</p>
+    </div>-->
+    <script src="script.js"></script>
+</body>
+</html>
